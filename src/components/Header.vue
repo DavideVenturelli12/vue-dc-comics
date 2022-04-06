@@ -28,19 +28,26 @@ export default {
 
 <style lang="scss">
 header {
-  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 10%;
+
   img {
-    width: 80px;
+    width: 50px;
     margin: 15px 0;
   }
+
   li {
     display: inline-block;
-    margin: 10px;
-    font-size: 14px;
+    margin: 12px;
+    font-size: 12px;
     font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px solid #0282f9;
+    }
   }
 }
 </style>
