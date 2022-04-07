@@ -24,6 +24,5 @@ export default {
 <style lang="scss">
 #app {
   font-family: sans-serif;
-  width: 100vw;
 }
 </style>
