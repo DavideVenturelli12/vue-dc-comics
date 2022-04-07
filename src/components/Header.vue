@@ -5,16 +5,7 @@
     </div>
     <div>
       <ul>
-        <li>CHARACTERS</li>
-        <li>COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIEDOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <li v-for="item in menu" :key="item">{{ item }}</li>
       </ul>
     </div>
   </header>
@@ -23,10 +14,26 @@
 <script>
 export default {
   name: "HeaderComponent",
+  data() {
+    return {
+      menu: [
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
+        "TV",
+        "GAMES",
+        "COLLECTIBLES",
+        "VIEDOS",
+        "FANS",
+        "NEWS",
+        "SHOP",
+      ],
+    };
+  },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
   display: flex;
   align-items: center;

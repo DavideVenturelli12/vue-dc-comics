@@ -106,7 +106,7 @@ export default {
 };
 </script>
 
-<style  lang="scss">
+<style  lang="scss" scoped>
 #shop-section {
   display: flex;
   align-items: center;
